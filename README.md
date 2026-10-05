@@ -1,23 +1,46 @@
-# Premium Motion Designer Skill
+# Premium Motion Designer
 
-A Claude Code skill for producing premium product-launch and SaaS motion-design videos from real products, codebases, websites, assets, and references.
+A skill for directing and building premium product films: launch videos, SaaS demos, explainers, and showreels. It is a decision system for what to take from a product, what to leave out, and how each second should move.
+
+The default failure it is written to beat: centered type, a soft gradient, everything fading in.
+
+Built from 15 references: 4 posts and 11 films from the Revid Opus motion wall. The list is in `references/reference-pack.md`. Grammar only. Nothing in those films is a template.
 
 ## Install
 
-Copy the `premium-motion-designer` directory into either:
+**Claude Code**
 
-- `~/.claude/skills/` for global use; or
-- `.claude/skills/` inside a project for project-local use.
+```bash
+npx skills add VaradDurge/Premium-Motion-Designer-Skill
+```
 
-Then invoke it naturally, for example:
+Or copy this repo's skill files into `~/.claude/skills/premium-motion-designer/` (global) or `.claude/skills/premium-motion-designer/` (project).
 
-> Use the premium motion designer skill to make a 25-second launch film for this product. Inspect the source, use the real UI where it helps, and research the supplied references before you build.
+**Cursor and other agents**
 
-## Included
+Copy the same files into the agent's skills directory (for Cursor, `.agents/skills/premium-motion-designer/` or your personal skills folder).
 
-- `SKILL.md` — core workflow and decision system
-- `references/creative-system.md` — design-quality rules
-- `references/research-protocol.md` — reference analysis workflow
-- `references/saas-product-video.md` — UI/product-video strategy
-- `references/quality-gate.md` — render review checklist
-- `examples/argus-brief.md` — example of adapting the system to Argus
+Then:
+
+> Use the premium motion designer skill. Make a 25-second launch film for this product, 16:9, for the site hero. Inspect the source and use the real UI. The job, the channel, and the length are set, so decide the rest and write the assumptions. It has to work muted.
+
+## What the model has to do
+
+1. If the prompt names the job, the channel, and the length, proceed and write assumptions for audience, sound, and claims. Ask only when two jobs are both plausible, or when a claim would be invented. X, Product Hunt, and a site hero must work muted.
+2. Write a creative note: intent, thesis, what is real, beats, exclusions, visual system, what it will borrow, what it will not copy.
+3. Design each beat as a still that works with the motion turned off.
+4. Animate only what has a role: reveal, respond, connect, emphasize, exit.
+5. Render, watch the frames second by second, and fix only what fails the thesis, the truth, or the generic-AI test.
+
+## Files
+
+- `SKILL.md` — the thinking order and the quality bar
+- `references/motion-craft.md` — timing, curves, type, cursor, cuts
+- `references/reference-grammar.md` — what strong films have in common, and what not to copy
+- `references/creative-system.md` — palette, type, camera, finish
+- `references/saas-product-video.md` — how a product film is structured
+- `references/research-protocol.md` — how to read a reference
+- `references/quality-gate.md` — the review after the render
+- `references/reference-pack.md` — films the grammar was learned from
+- `examples/argus-brief.md` — the creative note, applied
+- `examples/saas-launch.md` — a 30-second launch budget for ordinary software

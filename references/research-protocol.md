@@ -1,40 +1,53 @@
-# Reference research protocol
+# Research protocol
 
-## Primary references
+## Order of evidence
 
-Treat user-provided references as the main visual evidence. Inspect them for:
+1. The product: code, site, brand, real UI, real copy, real numbers
+2. References the user actually supplied
+3. A small amount of outside looking, only to solve a design problem
 
-- pacing
-- composition
-- typography
-- UI treatment
-- transition grammar
-- camera grammar
-- color architecture
-- motion curves
-- sound relationship
-- density
-- negative-space usage
+Outside research fills a gap ("how does a serious developer tool show a trace?"). It does not replace the product, and it does not override a reference the user asked you to learn from.
 
-## Secondary research
+## What to extract from a film
 
-Use web research only to resolve questions such as:
+Watch it. For each strong reference, write:
 
-- “How do premium developer-tool launches present a CLI?”
-- “What are current examples of UI-first motion ads?”
-- “How do high-end product films handle a graph/diagram?”
-- “What is a good reference for an editorial title reveal?”
+- The job (launch, demo, showreel, explainer, ad)
+- Opening: what is readable, and how soon
+- How a cut happens (hard field, shared object, morph)
+- What is still, and for how long
+- Type behavior
+- How much is on screen
+- Palette in one breath
+- The continuity object
+- Where it would become a cliché if you copied the surface
 
-Search by design problem. Do not search only for the product.
+Ask: what rule would survive if the colors and the subject were removed?
 
-## Reference matrix
+Keep two anchors, plus at most one reference each for type, UI, transitions, and sound.
 
-| Ref | Role | Borrow | Avoid copying |
-|---|---|---|---|
-| User reference A | Anchor | pacing/composition | exact layout |
-| User reference B | Anchor | motion grammar | exact colors |
-| Ref C | Typography | title behavior | distinctive type treatment |
-| Ref D | UI | interaction framing | copied UI |
-| Ref E | Transition | spatial continuity | proprietary sequence |
+## Borrow / refusal
 
-The final film should synthesize principles from references into an original visual system.
+| | Write this | Do not write this |
+|---|---|---|
+| Borrow | A rule: "one number, same position, hard cut to a sentence" | "Use their layout and their orange" |
+| Refusal | "I will not retell their story or end on the model logo" | "I won't copy it" with no specific temptation named |
+
+If someone could swap the logo and still recognize the other film, the refusal failed.
+
+"Make it like this" beats a list of adjectives, and it still means grammar, not a trace. Translate "premium" and "punchy" into frame counts, a palette, a type scale, and one continuity object before you build.
+
+## Search
+
+Search by the communication problem, not only by the product name.
+
+- premium developer-tool launch, trace or CLI
+- UI motion where one component is the hero
+- editorial type reveal
+- before/after product film
+
+Useful places: the user's links, Vimeo, Behance, product marketing sites, and the actual product. A beautiful abstract reel is a weak reference for a SaaS explanation unless the problem you are solving is abstract form.
+
+## If you cannot see it
+
+Do not describe a reference you could not open. Ask for the file, or proceed from evidence you have.
